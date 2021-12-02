@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PaymentSuccessfulActivity">
+
+    <Button
+        android:id="@+id/continue_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/transaction_id"
+        android:layout_marginTop="84dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/btn_gradient"
+        android:text="Continue"
+        android:layout_margin="50dp"
+        android:textColor="@color/colorButtonText"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_margin="60dp"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/imageview"
+        app:srcCompat="@drawable/done"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order Placed Successfully"
+        android:textSize="30sp"
+        android:textColor="@color/textColor"
+        android:id="@+id/textview"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/imageview"/>
+    <TextView
+        android:id="@+id/transaction_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Payment Successfull"
+        android:textSize="12sp"
+        android:layout_margin="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textview"/>
+
+    <TextView
+        android:id="@+id/Order_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order id"
+        android:textSize="14sp"
+        android:layout_margin="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/transaction_id"/>
+
+
+</RelativeLayout>

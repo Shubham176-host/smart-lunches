@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "70900733612",
+    "project_id": "smartlunches-9ff9e",
+    "storage_bucket": "smartlunches-9ff9e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:70900733612:android:263b58b4ec8155d157b109",
+        "android_client_info": {
+          "package_name": "com.example.smartlunches"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "70900733612-c3467tp17cd5d2l3ef8cmuk8b2j3mde2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.smartlunches",
+            "certificate_hash": "f6540d966e6f507f8560220a8751b968a3a6187e"
+          }
+        },
+        {
+          "client_id": "70900733612-0cra55ohs6bmhh4ibfgc0qhsb63nmqjn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWeZ1AP74xtJfaryzCofhr-5_QrPOkdUo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "70900733612-0cra55ohs6bmhh4ibfgc0qhsb63nmqjn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

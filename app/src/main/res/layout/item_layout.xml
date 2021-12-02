@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="250dp"
+    android:layout_margin="10dp"
+    android:background="@drawable/backgroundeditview"
+    android:id="@+id/layoutitem">
+
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/image_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="70">
+
+        <ImageView
+            android:id="@+id/item_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:adjustViewBounds="true"
+            android:layout_margin="5dp"
+            app:srcCompat="@drawable/recommended1" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginStart="2dp"
+                android:layout_below="@+id/item_img"
+                android:background="@color/black"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginStart="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image_layout">
+
+        <TextView
+        android:id="@+id/item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/open_sans_bold"
+        android:text="item name"
+        android:textColor="#333333"
+        android:textSize="12sp"
+        android:layout_alignParentStart="true" />
+
+        <LinearLayout
+            android:id="@+id/recommended_rating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/item_name">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_mdi_star_rate" />
+
+            <TextView
+                android:id="@+id/item_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:fontFamily="@font/open_sans_semibold"
+                android:text="4.5"
+                android:textColor="#333333"
+                android:textSize="10sp"
+                android:layout_below="@+id/imageView3"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/item_vegornonveg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="45 mins"
+            android:background="@drawable/ic_baseline_veg_mark"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:padding="5dp"
+            android:textSize="8sp"
+            android:layout_below="@+id/recommended_rating"/>
+
+        <TextView
+            android:id="@+id/item_cost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="160"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/textColor"
+            android:textSize="14sp"/>
+        </RelativeLayout>
+    </LinearLayout>
+    </RelativeLayout>

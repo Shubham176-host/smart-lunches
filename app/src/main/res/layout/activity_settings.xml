@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/settings_profile_image"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="20dp"
+        android:layout_margin="15dp"
+        android:src="@drawable/profile">
+
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+    <LinearLayout
+        android:id="@+id/linear_layout_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/settings_profile_image"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/linear_layout_1"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/settings_full_name"
+            android:hint="Full Name..."
+            android:textColor="@color/textColor"
+            android:textSize="14sp"
+            android:layout_marginStart="15dp"
+            android:padding="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/settings_usn"
+            android:hint="USN"
+            android:textSize="14sp"
+            android:textColor="@color/textColor"
+            android:layout_marginStart="15dp"
+            android:padding="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/settings_branch"
+            android:hint="Branch"
+            android:textSize="14sp"
+            android:textColor="@color/textColor"
+            android:layout_marginStart="15dp"
+            android:padding="10dp">
+
+        </TextView>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/settings_phone_number"
+            android:textColor="@color/textColor"
+            android:hint="phone number..."
+            android:layout_marginStart="15dp"
+            android:padding="10dp">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/settings_emailid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textColor"
+            android:layout_marginStart="15dp"
+            android:hint="Email id..."
+            android:lines="1"
+            android:padding="10dp">
+
+        </EditText>
+
+        <Button
+            android:id="@+id/update_account_settings_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="@drawable/btn_gradient"
+            android:text="Update"
+            android:textColor="@color/colorButtonText"
+            android:textSize="22dp" />
+
+    </LinearLayout>
+</RelativeLayout>

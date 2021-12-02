@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/item_img"
+            android:layout_height="150dp"
+            android:layout_width="match_parent"
+            android:contentDescription="Item Image" />
+
+        <TextView
+            android:id="@+id/item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="name"
+            android:textSize="16dp"
+            android:textColor="@color/textColor"/>
+
+        <TextView
+            android:id="@+id/item_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ID"
+            android:textSize="16dp"
+            android:textColor="@color/textColor"/>
+
+        <TextView
+            android:id="@+id/item_cost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price"
+            android:textSize="16dp"
+            android:textColor="@color/textColor"/>
+
+        <ImageView
+            android:id="@+id/item_vegornonveg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+            android:id="@+id/numberbutton"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:background="#543515">
+        </com.cepheuen.elegantnumberbutton.view.ElegantNumberButton>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/addtocart_btn"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Add to Cart"
+                android:textSize="14sp"
+                android:textColor="@color/textColor"
+                android:background="@drawable/btn_gradient"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
